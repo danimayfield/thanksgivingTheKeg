@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+        <style type="text/css">
+            table {border-collapse:separate;}
+            .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%;}
+            .ExternalClass {width: 100%;}
+          </style>
+    <style>
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        html {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            font-size: 16px;
+            color: white;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 300;
+            font-size: 1.8rem;
+            width: 100%;
+            text-align: center;
+            line-height: 1.3rem;
+            letter-spacing: 0.1rem;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            width: 100%;
+            text-align: center;
+            line-height: 2rem;
+            font-size: 1.2rem;
+        }
+
+        span {
+            color: orange;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.8rem;
+        }
+        a:hover {
+            color: orange;
+        }
+        a:visited{
+            color: rgb(175, 44, 44);
+        }
+
+
+        .wrapper {
+            max-width: 500px;
+            height: 780px;
+        }
+
+        .backgroundImage {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(0deg, rgba(2,0,36,1) 15%, rgba(157,74,18,1) 61%, rgba(135,98,7,1) 100%);
+            background: -moz-linear-gradient(0deg, rgba(2,0,36,1) 15%, rgba(157,74,18,1) 61%, rgba(135,98,7,1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(2,0,36,1) 15%, rgba(157,74,18,1) 61%, rgba(135,98,7,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#876207",GradientType=1);
+            max-width: 500px;
+            height: 780px;
+            padding: 2rem 1rem;
+        }
+
+        .bold {
+            font-weight: 700;
+            font-size: 2.6rem;
+        }
+
+        .dottedLineContainer {
+            width: 100%;
+        }
+
+        .dottedLine {
+            margin: 0.3rem 0;
+            padding: 0 8%;
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+        }
+
+        .changeColor {
+            filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(269deg) brightness(109%) contrast(101%);
+        }
+
+        .dot {
+            width: 0.12rem;
+        }
+
+        .mainContainer {
+            width: 100%;
+        }
+
+        .main {
+            padding: 0 13%;
+            margin-bottom: 49%;
+        }
+
+        .buttonContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 0.6rem 1.7rem;
+            background-color: rgb(175, 44, 44);
+            color: white;
+            border: 4px ridge rgb(48, 48, 48);
+            border-radius: 2px;
+        }
+
+        .logoContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 40%;
+        }
+
+        .icon {
+            width: 0.7rem;
+            text-align: center;
+        }
+
+        .nav {
+            font-size: 0.5rem;
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+        }
+
+        .footerRow {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .footerCell {
+            padding: 0 0.3rem;
+        }
+
+        .navDivider {
+            font-size: 0.7rem;
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            .backgroundImage{
+                background-image: url(./assets/US\ Thanksgiving\ E-blast_2015[1].jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .main {
+                margin-bottom: 42%;
+            }
+            .logo {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .main {
+                margin-bottom: 40%;
+            }
+            .bold{
+                font-size: 2.2rem;
+            }
+            .button{
+                padding: 0.6rem 1rem;
+            }
+            .logo {
+                width: 55%;
+            }
+        }
+        @media screen and (max-width:360px) {
+            .bold{
+                font-size: 2rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .button {
+                font-size: 0.7rem;
+            }
+            .logo {
+                width: 60%;
+            }
+        }
+
+    </style>
+    <title>Thanksgiving at The Keg!</title>
+</head>
+
+<body class="wrapper">
+    <div class="backgroundImage">
+        <thead>
+            <h1 style="mso-line-height-rule:exactly;">MAKE A</h1>
+            <h1 style="mso-line-height-rule:exactly;" class="bold">NEW TRADITION</h1>
+            <h1 style="mso-line-height-rule:exactly;">OUT OF AN OLD ONE</h1>
+            <table class="dottedLineContainer">
+                <tr class="dottedLine">
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                    <td><img src="./assets/circle-solid.svg" alt="dot" class="changeColor dot"></td>
+                </tr>
+            </table>
+        </thead>
+        <tbody class="mainContainer">
+            <p style="mso-line-height-rule:exactly;" class="main">
+                Start a new Thanksgiving tradition with your family at The Keg, and
+                enjoy a <span>3-course dinner</span> dinner for only $27.
+            </p>
+            <p style="mso-line-height-rule:exactly;" class="buttonContainer">
+                <a href="https://www.kegsteakhouse.com/#!/locations/#siteContent" class="button">CLICK HERE TO RESERVE
+                    YOUR TABLE ONLINE</a>
+            </p>
+        </tbody>
+        <tfoot>
+            <tr>
+                <a href="https://www.kegsteakhouse.com/" class="logoContainer"><img src="./assets/the-keg2.jpg"
+                        alt="The Keg Steakhouse + Bar Logo" class="logo"></a>
+            </tr>
+            <tr>
+
+                <table class="footer">
+                    <tr class="footerRow">
+                        <td class="footerCell"><a href="https://www.kegsteakhouse.com/" class="nav">Home</a></td>
+                        <td class="navDivider">|</td>
+                        <td class="footerCell"><a href="https://www.kegsteakhouse.com/#!/locations/#siteContent"
+                                class="nav">Locations</a></td>
+                        <td class="navDivider">|</td>
+                        <td class="footerCell"><a href="https://www.kegsteakhouse.com/#!/menu/#siteContent"
+                                class="nav">Menu</a></td>
+                        <td class="navDivider">|</td>
+                        <td class="footerCell"><a href="https://www.facebook.com/thekegsteakhouseandbar" class="nav"><img
+                                    src="./assets/facebookIcon.png" alt="Facebook Logo Icon" class="icon"></img></a></td>
+                        <td class="navDivider">|</td>
+                        <td class="footerCell"><a href="https://twitter.com/TheKeg" class="nav"><img
+                                    src="./assets/twitterIcon.png" alt="Twitter Logo Icon" class="icon"></img></a></td>
+                        <td class="navDivider">|</td>
+                        <td class="footerCell"><a href="https://www.instagram.com/thekegsteakhouse/" class="nav"><img
+                                    src="./assets/instagramIcon.png" alt="Instagram Logo Icon" class="icon"></img></a></td>
+                        <td class="navDivider">|</td>
+                        <td class="footerCell"><a href="https://www.kegsteakhouse.com/" class="nav">Guest Feedback</a></td>
+                        <td class="navDivider">|</td>
+                        <td class="footerCell"><a href="https://www.kegsteakhouse.com/#!/gift-cards/#siteContent"
+                                class="nav">Gift Cards</a></td>
+                        <td class="navDivider">|</td>
+                        <td class="footerCell"><a href="http://profile.kegsteakhouseemail.com/thekeg/" class="nav">Update
+                                Your Account</a></td>
+                        <td class="navDivider">|</td>
+                        <td class="footerCell"><a href="out.kegsteakhouseemail.com/u?uuid=[*sentid*]"
+                                class="nav">Unsubscribe</a></td>
+                    </tr>
+                </table>
+            </tr>
+
+        </tfoot>
+
+    </div>
+</body>
+
+</html>
